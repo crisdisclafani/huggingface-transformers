@@ -90,6 +90,3 @@ print(result8)
 
 _#[{'translation_text': 'Hugging Face è la creazione di uno strumento che la comunità utilizza per risolvere le attività NLP.'}]_
 #italian translation is not so correct ....
-
-
-
