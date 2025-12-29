@@ -3,19 +3,19 @@ Experiments with transformers library
 
 Create a new venv:
 
-cd <proj>
+_cd PROJ_DIR_
 
-python -m venv venv
+_python -m venv venv_
 
 Before starting, we need to install required libraries
 
-pip install torch
+_pip install torch_
 
-pip install transformers
+_pip install transformers_
 
-python -m spacy download en_core_web_sm
+_python -m spacy download en_core_web_sm_
 
-pip install sentencepiece
+_pip install sentencepiece_
 
 pipeline() function is the simplest trasnformers function that can be used;
 its constructor defines the context for which we want to use it:
@@ -28,13 +28,13 @@ result1 = classifier("I love using Hugging Face transformers!")
 
 print(result1)
 
-#[{'label': 'POSITIVE', 'score': 0.9971315860748291}]
+_#[{'label': 'POSITIVE', 'score': 0._9971315860748291}]_
 
 result2 = classifier("This is the worst experience I've ever had.")
 
 print(result2)
 
-#[{'label': 'NEGATIVE', 'score': 0.9997679591178894}]
+_#[{'label': 'NEGATIVE', 'score': 0.9997679591178894}]_
 
 **zero-shot classification**
 
@@ -49,7 +49,7 @@ result4 = zsc("Juventus won yesterday",
 
 print(result4)
 
-#{'sequence': 'Juventus won yesterday', 'labels': ['sports', 'technology', 'politics'], 'scores': [0.9163153171539307, 0.0478145033121109, 0.03587019070982933]}
+_#{'sequence': 'Juventus won yesterday', 'labels': ['sports', 'technology', 'politics'], 'scores': [0.9163153171539307, 0.0478145033121109, 0.03587019070982933]}_
 
 **text-generation**
 
@@ -62,7 +62,7 @@ result5 = generator("In a distant future, humanity has",
 
 print(result5)
 
-#[{'generated_text': 'In a distant future, humanity has not evolved to be a full sentient species—that is, to be a species of sentient beings with a human heart. In this way, it is'}, {'generated_text': "In a distant future, humanity has a great deal of potential, but also a lot of work to do before we know what kind of future we're in.\n\nDo you know"}]
+_#[{'generated_text': 'In a distant future, humanity has not evolved to be a full sentient species—that is, to be a species of sentient beings with a human heart. In this way, it is'}, {'generated_text': "In a distant future, humanity has a great deal of potential, but also a lot of work to do before we know what kind of future we're in.\n\nDo you know"}]_
 
 **ner (Named Entity Recognition)**
 
@@ -80,7 +80,7 @@ result7 = translate("Hugging Face is creating a tool that the community uses to 
 
 print(result7)
 
-#[{'translation_text': 'Hugging Face está creando una herramienta que la comunidad utiliza para resolver las tareas de NLP.'}]
+_#[{'translation_text': 'Hugging Face está creando una herramienta que la comunidad utiliza para resolver las tareas de NLP.'}]_
 
 translate_it=pipeline("translation", model="Helsinki-NLP/opus-mt-en-it")
 
@@ -88,7 +88,7 @@ result8 = translate_it("Hugging Face is creating a tool that the community uses 
 
 print(result8)
 
-#[{'translation_text': 'Hugging Face è la creazione di uno strumento che la comunità utilizza per risolvere le attività NLP.'}]     
+_#[{'translation_text': 'Hugging Face è la creazione di uno strumento che la comunità utilizza per risolvere le attività NLP.'}]_
 #italian translation is not so correct ....
 
 
