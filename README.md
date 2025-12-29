@@ -48,7 +48,7 @@ print(result5)
 
 #[{'generated_text': 'In a distant future, humanity has not evolved to be a full sentient species—that is, to be a species of sentient beings with a human heart. In this way, it is'}, {'generated_text': "In a distant future, humanity has a great deal of potential, but also a lot of work to do before we know what kind of future we're in.\n\nDo you know"}]
 
-**ner (Named Entity Recognition) **
+**ner (Named Entity Recognition)**
 NER recognizes persons, companies, places names and highlights them;
 using spacy, we get an awesome output:
 
@@ -70,7 +70,7 @@ result8 = translate_it("Hugging Face is creating a tool that the community uses 
 print(result8)
 
 #[{'translation_text': 'Hugging Face è la creazione di uno strumento che la comunità utilizza per risolvere le attività NLP.'}]     
-### italian translation is not so correct ....
+#italian translation is not so correct ....
 
 
 
